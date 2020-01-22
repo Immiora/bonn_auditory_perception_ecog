@@ -90,7 +90,7 @@ def acc_pass(t_, y_):
 def main():
     #
     print('\nRunnig fold: ' + sys.argv[1])
-    kfold_ = int(sys.argv[1])
+    kfold_ = int(sys.argv[1]) # only train for one cross-validation fold at a time (this way we can train all folds in parallel)
     print(type(kfold_))
 
     # load data
@@ -127,9 +127,9 @@ def main():
     xtr1    = xtr1[:n1]
     xtr1    = xtr1[:, None]
 
-    # set up cross-validation for performance accuracy
+    # set up cross-validation for performance accuracy: set-up the same way for all folds when folds are trained separately
     kfolds = 10
-    nparts = 7 # test set is not a continuous chunk but is a concatenation of an nparts fragments for better performance
+    nparts = 7 # test set is not a continuous chunk but is a concatenation of nparts fragments for better performance
     ind1 = np.arange(xtr1.shape[0])
     ind2 = np.arange(ttr.shape[0])
     ind3 = np.arange(ttr.shape[0])
