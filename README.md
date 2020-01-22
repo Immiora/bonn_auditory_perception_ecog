@@ -4,7 +4,7 @@ Here, construct a data-driven neural model of auditory perception, with a minimu
 
 The repository contains
 
-- the model specification using chainer 6.1.0
+- the model specification using [Chainer](https://chainer.org/) 6.1.0
 - the training routine
 - the weights of one of the best performing models
 
