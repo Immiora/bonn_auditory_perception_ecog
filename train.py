@@ -100,7 +100,7 @@ def main():
               'n_back_6_cnnT_300h_cnnF_100h_rnn_300h_alt_alt2_concattest_train' + str(int(tr_fact * 100)) + '/'
     x1_file = './data/M3_audio_mono_down.wav'
     x2_file = './data/minoes_wav_freq_125Hz_abs.npy'
-    t_file  = './data/minoes_hfb_6subjs_noduiven.npy'
+    t_file  = './data/minoes_hfb_6subjs.npy'
     xtr1    = librosa.load(x1_file, sr=8000)[0]
     xtr2    = np.load(x2_file).astype(np.float32)
     ttr     = np.load(t_file).astype(np.float32)
