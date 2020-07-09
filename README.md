@@ -1,5 +1,8 @@
 ### Brain-optimized neural network for auditory processing
 
+The repository provides code that supports the results reported here: 
+[Brain-optimized extraction of complex sound features that drive continuous auditory perception](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007992)
+
 Here we construct a data-driven neural model of auditory perception, with a minimum of theoretical assumptions about the relevant sound features. In the associated paper we show that it could provide an alternative approach and possibly a better match to the neural responses.
 
 The repository contains
